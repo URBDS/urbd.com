@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URBD - Official Page</title>
+    <style>
+        /* Body and Background */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: linear-gradient(270deg, green, blue, red, green);
+            background-size: 800% 800%;
+            animation: gradientFlow 12s ease infinite;
+        }
+
+        /* Gradient Animation */
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Container Styling */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Header */
+        h1 {
+            font-size: 2.2em;
+            color: #222;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        /* Message Styling */
+        .message {
+            font-size: 1.8em;
+            color: #111;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+
+        /* Link Box Styling */
+        .link-box {
+            font-size: 1.2em;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px 24px;
+            display: inline-block;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            position: relative;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        /* Hover Effect */
+        .link-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 123, 255, 0.2); /* Subtle background color */
+            border-radius: 5px;
+            transform: scale(0);
+            transition: transform 0.3s ease;
+        }
+
+        .link-box:hover::before {
+            transform: scale(1); /* Expand the background on hover */
+        }
+
+        .link-box:hover {
+            color: #fff;
+            border-color: #007bff;
+        }
+
+        /* Poster and Media */
+        .poster, video {
+            max-width: 100%;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Larger Poster for End Image */
+        .large-poster {
+            width: 200%;
+            height: auto;
+        }
+
+        /* Story Text */
+        .story {
+            font-size: 1.5em;
+            color: #555;
+            font-style: italic;
+            margin: 20px 0;
+        }
+
+        /* Details Button */
+        .details-button {
+            font-size: 1.2em;
+            color: #007bff;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 20px;
+            display: inline-block;
+            transition: color 0.3s;
+        }
+
+        .details-button:hover {
+            color: #0056b3;
+        }
+
+        /* Details Text */
+        .details-text {
+            font-size: 1.1em;
+            color: #444;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Display Local Video -->
+        <h1>Welcome to Our Page</h1>
+        <p class="story">This is our official website where we announce our upcoming events, videos, and songs.</p>
+        
+        <video width="600" controls>
+            <source src="file:///C:/Users/user/OneDrive/Desktop/ANTIM%20LEKHAI%20.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Message -->
+        <p class="message">This is my rap - watch it on YouTube too!</p>
+
+        <!-- YouTube Link with Hover Box Effect -->
+        <a href="https://www.youtube.com/@shredderOPanil" class="link-box" target="_blank">Subscribe to my YouTube channel</a>
+
+        <!-- Poster Image -->
+        <img src="file:///C:/Users/user/OneDrive/Desktop/maxresdefault.jpg" class="poster" alt="Video Poster">
+
+        <!-- Story / Dedication -->
+        <p class="story">This song is dedicated to those couples who could not be engaged. I hope you all will enjoy it. Don’t miss it!</p>
+
+        <!-- YouTube Video Link with Hover Box Effect -->
+        <a href="https://youtu.be/mDQGsB5FKOY?si=-Pi9t5Eu5myTVd3n" class="link-box" target="_blank">Watch or Listen Here</a>
+
+        <!-- Details Section -->
+        <p class="details-button" onclick="toggleDetails()">Details</p>
+        <div id="detailsText" class="details-text">
+            This is our official website where we announce upcoming events, videos, and exclusive content. Here, you will find all updates that may not be available on our other platforms such as YouTube or Facebook.
+        </div>
+
+        <!-- New Image at the End -->
+        <img src="file:///C:/Users/user/OneDrive/Desktop/dbca87a7-d671-41a5-99d9-51bcbaff587e.jpg" class="poster" alt="Additional Image">
+        
+        <!-- Additional Message -->
+        <h1>Our Hanging Words ;D</h1>
+
+        <!-- Added Image at the End with Larger Size -->
+        <img src="file:///C:/Users/user/OneDrive/Desktop/qV0-yvr02rAmq.jpg" class="poster large-poster" alt="End Image">
+        <p><h2>So this is lyrics video of "Kalpana Ma Khusi"</h2></p>
+        <h1><a href="https://youtu.be/qV0-yvr02rA?si=XMakI7qtYNQfAlKD" target="_blank" class="link-box">Click me if you want to watch this :)</a></h1>
+
+        <p>Hello guys, there is an upcoming song which will be released soon, so don't forget to subscribe and turn on the bell icon.</p> 
+        <img src="C:/Users/user/OneDrive/Desktop/subscribe-subscribelogo.gif" alt="subscribe-subscribelogo" class="poster">
+
+        <h1><a href="https://youtube.com/@shredderopanil?si=1LoMjanakypRLlaV" target="_blank" class="link-box">CLICK ME TO SUBSCRIBE !!!!!!!!!</a></h1>
+    </div>
+
+    <script>
+        function toggleDetails() {
+            const details = document.getElementById("detailsText");
+            details.style.display = (details.style.display === "none" || details.style.display === "") ? "block" : "none";
+        }
+    </script>
+
+</body>
+</html>
